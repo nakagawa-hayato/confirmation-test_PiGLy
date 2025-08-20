@@ -1,0 +1,80 @@
+.content {
+    background: linear-gradient(#FFABD9, #FED4D4);
+}
+
+.login-form {
+    margin: 0px auto;
+    width: 40%;
+    height: auto;
+}
+
+.login-form__inner {
+    width: 100%;
+    padding: 48px 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+}
+
+.login-form__heading {
+    text-align: center
+}
+
+.login-form__app-name {
+    font-size: 60px;
+    font-family: serif;
+    color: #EC87EF;
+}
+
+.login-form__content-heading {
+    font-weight: 300;
+    font-size: 30px;
+    font-family: serif;
+    color: #333333;
+}
+
+.login-form__form {
+    width: 100%;
+}
+
+.login-form__group {
+    margin: 32px auto 0;
+    width: 90%;
+}
+
+.login-form__label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.login-form__input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+}
+
+.login-form__error-message {
+    color: red;
+}
+
+.login-form__btn {
+    margin: 32px auto 0;
+    width: 50%;
+}
+
+.login-form__btn:hover {
+    background-color: #B3A69D;
+}
+
+.footer__link {
+    width: 100%;
+    margin: 24px auto 0;
+    text-align: center;
+}
+
+.footer__link-btn {
+    display: inline-block;
+    color: #2C99FF;
+}

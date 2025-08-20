@@ -1,0 +1,129 @@
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #CDCDCD;
+}
+
+.error {
+    color: red;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #CDCDCD;
+    text-align: center;
+    padding: 10px 20px;
+    height: 71px;
+    width: 100%;
+}
+
+.header__heading {
+    font-size: 40px;
+    font-family: serif;
+    color: #EC87EF;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+
+    grid-column: 3;
+}
+
+.header__item {
+    color: #333333;
+    background-color: #F7F7F7;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.header-nav__link {
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-nav__button {
+    color: #333333;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* コンテンツ */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    color: #333333;
+}
+
+.content__heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .form-container,
+    .login-form__form,
+    .register-form__form,
+    .sell-form__form,
+    .edit-form__form {
+        width: min(60vw, 800px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .form-container,
+    .login-form__form,
+    .register-form__form,
+    .sell-form__form,
+    .edit-form__form {
+        width: 90vw;
+        padding: 48px 24px;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#A3A6E1, #FFABD9);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #B3A69D, #FFABD9);
+}
+

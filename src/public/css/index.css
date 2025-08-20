@@ -1,0 +1,407 @@
+.content {
+    background: #F9F9F9;
+}
+
+.index-form {
+    margin: 48px auto;
+    width: 80%;
+    height: auto;
+}
+
+.index-form__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.top-contents {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+
+    gap: 5%;
+}
+
+.top-content {
+    width: 30%;
+    padding-left: 48px;
+    border-left: 1px solid #CDCDCD;
+    color: #333333;
+}
+
+.top-content:first-child {
+    border: none;
+}
+
+.top-content__label
+.unit {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+
+.top-content__weight {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.under-contents {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.under-content__search-form {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.search-form {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.search-form__inputs {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px
+}
+
+.search-form__date {
+    display: block;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    padding: 8px 12px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #CDCDCD;
+    font-weight: 300;
+}
+
+.search-form__date::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+.search-form__date::after {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #CDCDCD;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    content: "";
+    transform: translateY(-50%);
+}
+
+.search-form__date-tilde {
+    display: block;
+    color: #333333;
+}
+
+.search-form__actions {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.search-form__search-btn {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    background: #919191;
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form__search-btn {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    background: #919191;
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form__reset-btn {
+    color: #919191;
+    background: #FFFFFF;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.weight-data_create {
+    width: 20%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.under-content__table {
+    margin-top: 16px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.under-content__row {
+    border: 1px solid #E0DFDE;
+}
+
+.under-content__label,
+.under-content__data {
+    padding: 16px 8px;
+    text-align: center;
+}
+
+.under-content__label:first-of-type,
+.under-content__data:first-of-type {
+    padding-left: 48px;
+    text-align: left;
+}
+
+.under-content__label:last-of-type,
+.under-content__data:last-of-type {
+    padding-right: 48px;
+}
+
+.under-content__label {
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.under-content__detail-btn {
+    padding: 8px 12px;
+    border: none;
+    text-decoration: none;
+}
+
+/* ページネーション */
+/* 下中央に配置 */
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ベースのUL */
+.pagination {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* LI（Prev/Next/数字） */
+.pagination .page-item {
+    display: flex;
+}
+
+/* クリック不可の見た目 */
+.pagination .page-item.disabled .page-link {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* 数字・矢印の共通ボックス */
+.pagination .page-link {
+    display: block;
+    min-width: 36px;
+    /* 四角っぽく */
+    height: 36px;
+    line-height: 36px;
+    /* 垂直中央 */
+    text-align: center;
+    padding: 0 10px;
+    /* 2桁以上にも余白 */
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    color: #4B4B4B;
+    /* 数字・矢印の文字色 */
+    background: none;
+}
+
+/* 現在ページ：グラデ背景＆白文字 */
+.pagination .page-item.active .page-link {
+    background: linear-gradient(90deg, #A3A6E1, #FFABD9);
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 2px 8px;    /* アクティブだけ少し余白を与える */
+    border-radius: 4px;
+}
+
+/* モーダル */
+.modal {
+    position: fixed;
+    inset: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .25s ease;
+    z-index: 900;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 901;
+}
+
+.modal-form__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    width: min(640px, 92vw);  /* 画面幅が狭い時は縮む */
+    max-height: 85vh;  /* はみ出し防止 */
+    overflow: auto;  /* 中でスクロール */
+    background-color: #FFFFFF;
+    border: 1px solid #8B7969;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    padding: 24px;  /* 余白で中身が白枠内に収まる */
+    z-index: 902;  /* overlay より前面に */
+}
+
+/* 見出し */
+.modal-form__heading {
+    margin: 0 0 12px;
+}
+
+.modal-form__form {
+    width: 100%;
+}
+
+.modal-form__group {
+    margin-top: 18px;
+}
+
+.modal-form__label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.modal-form__input-group {
+    display: flex;
+    justify-content: flex-start;
+    /* 左寄せでOK */
+    align-items: baseline;
+    gap: 8px;
+    /* inputとunitの間に隙間 */
+}
+
+.modal-form__input {
+    display: block;
+    width: 100%;
+    height: 43px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+}
+
+.unit {
+    display: block;
+    white-space: nowrap;
+    /* 改行させない */
+}
+
+.modal-form__textarea {
+    width: 100%;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+}
+
+.modal-action {
+    display: flex;
+    justify-content: center;
+    /* 戻る＋登録を中央揃え */
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-form__close-btn {
+    display: inline-block;
+    padding: 8px 60px;
+    background-color: #E0DFDE;
+    color: #333333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal-form__store-btn {
+    padding: 8px 60px;
+}
+
+/* 削除ボタンを右端に固定 */
+.btn-delete {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal-form__error-message {
+    color: red;
+}
+
+
