@@ -28,7 +28,7 @@
 
 ## ER 図
 
-[PiGLy.dio](https://github.com/nakagawa-hayato/confirmation-test_PiGLy/blob/main/PiGLy.dio)
+<img width="761" height="301" alt="Image" src="https://github.com/user-attachments/assets/0e5f5e7c-7c5b-43c5-9553-7b8735abf16d" />
 
 ## URL
 
